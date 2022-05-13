@@ -1,4 +1,7 @@
+from SlidingWindowBestTimeToBuySellStock import SlidingWindowBestTimeToBuySellStock
 from Trie import Trie
+
+
 # Press ⌃R to execute it or replace it with your code.
 # Press Double ⇧ to search everywhere for classes, files, tool windows, actions, and settings.
 
@@ -21,7 +24,13 @@ def trie_test():
     print(f'starts_with xx {trie.starts_with("xx")}')
 
 
+def sliding_window_best_time_to_buy_sell_stock_test():
+    profit = SlidingWindowBestTimeToBuySellStock.max_profit([7, 1, 5, 3, 6, 4])
+    print(f'SlidingWindowBestTimeToBuySellStock max profit {profit}')
+
+
 if __name__ == '__main__':
     # print_hi('PyCharm')
+    sliding_window_best_time_to_buy_sell_stock_test()
     trie_test()
 
