@@ -22,6 +22,6 @@ def trie_test():
 
 
 if __name__ == '__main__':
-    #print_hi('PyCharm')
+    # print_hi('PyCharm')
     trie_test()
 
