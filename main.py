@@ -1,5 +1,6 @@
 from SlidingWindowBestTimeToBuySellStock import SlidingWindowBestTimeToBuySellStock
 from Trie import Trie
+from Graphs.ConnectedComponentsInAnUndirectedGraphUnionFind import ConnectedComponentsInAnUndirectedGraphUnionFind
 
 
 # Press ⌃R to execute it or replace it with your code.
@@ -29,8 +30,14 @@ def sliding_window_best_time_to_buy_sell_stock_test():
     print(f'SlidingWindowBestTimeToBuySellStock max profit {profit}')
 
 
+def connected_components_in_an_undirected_graph_union_find_test():
+    uf = ConnectedComponentsInAnUndirectedGraphUnionFind.count_components(5, [[0, 1], [1, 2], [3, 4]])
+    print(f'ConnectedComponentsInAnUndirectedGraphUnionFind connected components {uf}')
+
+
 if __name__ == '__main__':
     # print_hi('PyCharm')
-    sliding_window_best_time_to_buy_sell_stock_test()
-    trie_test()
+    # sliding_window_best_time_to_buy_sell_stock_test()
+    # trie_test()
+    connected_components_in_an_undirected_graph_union_find_test()
 
