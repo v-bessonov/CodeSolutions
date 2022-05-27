@@ -1,6 +1,8 @@
 from SlidingWindowBestTimeToBuySellStock import SlidingWindowBestTimeToBuySellStock
 from Trie import Trie
 from Graphs.ConnectedComponentsInAnUndirectedGraphUnionFind import ConnectedComponentsInAnUndirectedGraphUnionFind
+from ValidParentheses import ValidParentheses
+from Graphs.NetworkDelayTime import NetworkDelayTime
 
 
 # Press ⌃R to execute it or replace it with your code.
@@ -35,9 +37,20 @@ def connected_components_in_an_undirected_graph_union_find_test():
     print(f'ConnectedComponentsInAnUndirectedGraphUnionFind connected components {uf}')
 
 
+def valid_parentheses_test():
+    res = ValidParentheses.is_valid("(){}[]")
+    print(f'Valid Parentheses {res}')
+
+
+def network_delay_time_test():
+    res = NetworkDelayTime.network_delay_time([[2, 1, 1], [2, 3, 1], [3, 4, 1]], 4, 2)
+    print(f'Network Delay Time {res}')
+
+
 if __name__ == '__main__':
     # print_hi('PyCharm')
     # sliding_window_best_time_to_buy_sell_stock_test()
     # trie_test()
-    connected_components_in_an_undirected_graph_union_find_test()
-
+    # connected_components_in_an_undirected_graph_union_find_test()
+    # valid_parentheses_test()
+    network_delay_time_test()
