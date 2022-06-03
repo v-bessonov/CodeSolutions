@@ -3,6 +3,7 @@ from Trie import Trie
 from Graphs.ConnectedComponentsInAnUndirectedGraphUnionFind import ConnectedComponentsInAnUndirectedGraphUnionFind
 from ValidParentheses import ValidParentheses
 from Graphs.NetworkDelayTime import NetworkDelayTime
+from Graphs.MinCostToConnectAllPointsMstPrim import MinCostToConnectAllPointsMstPrim
 
 
 # Press ⌃R to execute it or replace it with your code.
@@ -47,10 +48,17 @@ def network_delay_time_test():
     print(f'Network Delay Time {res}')
 
 
+def min_cost_to_connect_all_points_mst_prim_test():
+    points = [[0, 0], [2, 2], [3, 10], [5, 2], [7, 0]]
+    res = MinCostToConnectAllPointsMstPrim.min_cost_connect_points(points)
+    print(f'Min Cost To Connect All Points Mst Prim {res}')
+
+
 if __name__ == '__main__':
     # print_hi('PyCharm')
     # sliding_window_best_time_to_buy_sell_stock_test()
     # trie_test()
     # connected_components_in_an_undirected_graph_union_find_test()
     # valid_parentheses_test()
-    network_delay_time_test()
+    # network_delay_time_test()
+    min_cost_to_connect_all_points_mst_prim_test()
